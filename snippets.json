@@ -1,0 +1,130 @@
+
+{
+  "th:text": {
+    "prefix": "thtxt",
+    "body": "th:text=\"$1\"",
+    "description": "Thymeleaf text"
+  },
+
+  "th:field": {
+    "prefix": "thfld",
+    "body": "th:field=\"*{$1}\"",
+    "description": "Thymeleaf field"
+  },
+
+  "th:each": {
+    "prefix": "theach",
+    "body": "th:each=\"$1 : ${$2}\"",
+    "description": "Thymeleaf each"
+  },
+
+  "th:each li": {
+    "prefix": "theachli",
+    "body": "<li th:each=\"$1 : ${$2}\"></li>",
+    "description": "Thymeleaf each list"
+  }, 
+
+  "th:object": {
+    "prefix": "thobj",
+    "body": "th:object=\"${$1}\"",
+    "description": "Thymeleaf object"
+  },  
+
+  "th:ref": {
+    "prefix": "thref",
+    "body": "th:href=\"@{$1}\"" ,
+    "description": "Thymeleaf reference"
+  }, 
+ 
+  "th:form": {
+    "prefix": "thform",
+    "body": "<form th:action=\"@{$1}\"$2>$3</form>",
+    "description": "Thymeleaf form"
+  }, 
+  "th:form1": {
+    "prefix": "thfp",
+    "body": "<form th:action=\"@{$1}\"$2 method=\"POST\">$3</form>",
+    "description": "Thymeleaf form"
+  }, 
+
+  "th:if": {
+    "prefix": "thif",
+    "body": "th:if=\"$1\"",
+    "description": "Thymeleaf if"
+  }, 
+
+  "th:switch": {
+    "prefix": "thswitch",
+    "body": "th:switch=\"${$1}\"",
+    "description": "Thymeleaf switch"
+  },   
+
+  "th:case": {
+    "prefix": "thcase",
+    "body": "th:case=\"$1\"",
+    "description": "Thymeleaf case"
+  },   
+
+  "th:value": {
+    "prefix": "thval",
+    "body": "th:value=\"$1\"",
+    "description": "Thymeleaf value"
+  },   
+
+  "th:template": {
+    "prefix": "thtmpl",
+    "body": "<!DOCTYPE html>\n<html xmlns:th=\"http://www.thymeleaf.org\">\n\t<head>\n\t\t...\n\t</head>\n\n\t<body>\n\t\t...\n\t</body>\n</html>",
+    "description": "Thymeleaf html template"
+  },
+  "th:errors":{
+      "prefix":"therr",
+      "body":"th:errors=\"*{$1}\""
+  },
+  "th:block":{
+    "prefix": "thblock",
+    "body" : "<th:block $1>$2</th:block>",
+    "description" : "Thymeleaf block tag"
+  },
+  "th:with":{
+      "prefix" : "thwith",
+      "body" : "th:with=\"$1\"$2",
+      "description": "Thymeleaf with"
+  },
+  "th:inline":{
+      "prefix" : "thinline",
+      "body" : "th:inline=\"$1\"",
+      "description" : "Thymeleaf inline"
+  },
+  "th:replace":{
+      "prefix" : "threplace",
+      "body" : "th:replace=\"$1\"",
+      "description" : "Thymeleaf replace"
+  },
+  "th:fragment":{
+      "prefix" : "thfragment",
+      "body" : "th:fragment=\"$1\"",
+      "description" : "Thymeleaf fragment"
+  },
+
+
+//   HTML 관련
+    "html:include": {
+        "prefix": "hturl",
+        "body": "xmlns:th=\"http://www.thymeleaf.org\"\n\txmlns:sec=\"http://www.thymeleaf.org/thymeleaf-extras-springsecurity5\"\n\txmlns:layout=\"http://www.ultraq.net.nZ/thymeleaf/layout\"\n\tlayout:decorate=\"layouts/main_template\"",
+        "description": "html xmlns"
+    },
+    "xmlns:sec":{
+        "prefix": "securl",
+        "body": "xmlns:sec=\"http://www.thymeleaf.org/extras/spring-security"
+    },
+    "sec:authorize":{
+        "prefix": "sec:authorize",
+        "body": "sec:authorize=\"$1\"$2",
+        "description": "sec:authorize"
+    },
+    "sec:authentication":{
+        "prefix": "sec:authentication",
+        "body": "sec:authentication=\"$1\"$2",
+        "description": "sec:authentication"
+    }
+}
